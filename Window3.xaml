@@ -1,0 +1,47 @@
+﻿<Window x:Class="GrapWPFconvertUnicod.Window3"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Text editor" Height="450" Width="700">
+    <DockPanel>
+        <StackPanel Orientation="Horizontal" DockPanel.Dock="Top" Margin="0,0,0,10">
+            <Button Click="CreateFile_Click" Margin="10,0,10,0">
+                <StackPanel Orientation="Horizontal" >
+                    <TextBlock Text="&#xE7C3;" FontFamily="Segoe MDL2 Assets" FontSize="19" RenderTransformOrigin="0.175,0.559" />
+                    <TextBlock Text="   Create " VerticalAlignment="Center"/>
+                    <!--бубубу я устал-->
+                </StackPanel>
+            </Button>
+            <Button Click="SaveFile_Click" Margin="0,0,10,0">
+                <StackPanel Orientation="Horizontal" >
+                    <TextBlock Text="&#xE74E;" FontFamily="Segoe MDL2 Assets" FontSize="19" />
+                    <TextBlock Text="   Save "/>
+                </StackPanel>
+            </Button>
+            <Button Click="OpenFile_Click" Margin="0,0,350,0">
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="&#xe8da;" FontFamily="Segoe MDL2 Assets" FontSize="19" />
+                    <TextBlock Text="   Open" VerticalAlignment="Center"/>
+                </StackPanel>
+            </Button>
+
+            <Button Click="ThemeMod" Margin="-340,0,10,0" Width="38" Height="32">
+                <StackPanel Width="19" >
+                    <TextBlock Text="&#xE9B0;" FontFamily="Segoe MDL2 Assets" FontSize="23" RenderTransformOrigin="0.485,2.12" Width="14" Height="22"   />
+                </StackPanel>
+            </Button>
+        </StackPanel>
+
+        <TextBox x:Name="TextEditorBox"
+                 AcceptsReturn="True"
+                 AcceptsTab="True"
+                 VerticalScrollBarVisibility="Auto"
+                 HorizontalScrollBarVisibility="Auto"
+                 TextWrapping="Wrap"
+                 FontFamily="baloo"
+                 FontSize="14"
+                 Text=""/>
+
+    </DockPanel>
+
+
+</Window>

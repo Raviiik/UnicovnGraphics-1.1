@@ -1,0 +1,65 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<OutputType>WinExe</OutputType>
+		<TargetFramework>net9.0-windows</TargetFramework>
+		<Nullable>enable</Nullable>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<UseWPF>true</UseWPF>
+		<RuntimeIdentifiers>win-x64;win-x86;win-arm64</RuntimeIdentifiers>
+		<ApplicationManifest>app.manifest</ApplicationManifest>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<None Remove="2-Photoroom %281%29 %281%29.ico" />
+		<None Remove="Devanagari_rus.kmap" />
+		<None Remove="Devanagari_rus.my" />
+		<None Remove="icon.ico" />
+		<None Remove="Sanskrit-Translit-rus.kmap" />
+		<None Remove="Sanskrit-Translit-rus.my" />
+		<None Remove="yudit-3.1.0-1.x86_64.exe" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Content Include="Devanagari_rus.kmap">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Devanagari_rus.my">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Sanskrit-Translit-rus.kmap">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Sanskrit-Translit-rus.my">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Content Include="yudit-3.1.0-1.x86_64.exe">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="9.0.6" />
+		<PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="9.0.6" />
+		<PackageReference Include="Microsoft.Extensions.Logging" Version="9.0.6" />
+		<PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="9.0.6" />
+		<PackageReference Include="Microsoft.Extensions.Options" Version="9.0.6" />
+		<PackageReference Include="Microsoft.Extensions.Primitives" Version="9.0.6" />
+		<PackageReference Include="Microsoft.Office.Interop.Word" Version="15.0.4797.1004" />
+		<PackageReference Include="System.Text.Json" Version="9.0.6" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Resource Include="icon.ico">
+			<CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</Resource>
+	</ItemGroup>
+
+	<ItemGroup>
+		<Resource Include="2-Photoroom (1) (1).ico">
+			<CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</Resource>
+	</ItemGroup>
+
+</Project>
+

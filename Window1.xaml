@@ -1,0 +1,89 @@
+﻿<Window x:Class="GrapWPFconvertUnicod.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Frequently Asked Questions" Height="427" Width="400" ResizeMode="CanMinimize">
+
+
+    <DockPanel Margin="10">
+
+        <!-- Языковые кнопки -->
+        <StackPanel Orientation="Horizontal" DockPanel.Dock="Top" HorizontalAlignment="Center" Margin="0 0 0 10">
+            <Button Content="RU" Click="RU_Click" Margin="5" Padding="10,5"/>
+            <Button Content="EN" Click="EN_Click" Margin="5" Padding="10,5"/>
+
+        </StackPanel>
+        <StackPanel Height="32" Margin="0 -60 -345 0" DockPanel.Dock="Top" Orientation="Horizontal" Width="33">
+            <Button Content="&#xE9B0;" FontFamily="Segoe MDL2 Assets"  FontSize="20" Click="ThemeMod" DockPanel.Dock="Bottom" Height="30" Margin="0 0 0 0" RenderTransformOrigin="0.59,-10.923">
+
+            </Button>
+        </StackPanel>
+
+
+        <!-- Две панели с локализованными RichTextBox -->
+        <Grid>
+            <!-- Панель 1: Русский -->
+            <Grid x:Name="Panel11">
+                <RichTextBox x:Name="TextBox1"
+                             IsReadOnly="True"
+                             VerticalScrollBarVisibility="Visible"
+                             HorizontalScrollBarVisibility="Disabled">
+                    <FlowDocument FontFamily="Segoe UI Variable">
+                        <Paragraph>
+                            <Run FontWeight="Bold" FontSize="20">ᅟᅟᅟᅟЧастые проблемы</Run>
+                            <LineBreak/>
+                            <Run FontWeight="Bold" FontSize="18">Вопрос 1:</Run>
+                            <Run>если вы сделали все правильно а файл не создался, пустой или внутри файла белеберда.</Run>
+                            <LineBreak/>
+                            <Run FontWeight="Bold" FontSize="15">1 Решение:</Run>
+                            <Run>файл обязательно должен быть кодировке UTF-8 или UTF-16LE.</Run>
+                            <LineBreak/>
+                            <Run FontWeight="Bold" FontSize="15">2 Решение:</Run>
+                            <Run>создайте копию файла и убедитесь, что формат кодировки корректен (UTF-8 ; 16le).</Run>
+                            <LineBreak/>
+                            <Run FontWeight="Bold" FontSize="18">Вопрос 2:</Run>
+                            <Run>если Yudit не установлен, а автоматически он не установился.</Run>
+                            <LineBreak/>
+                            <Run FontWeight="Bold" FontSize="15">Решение:</Run>
+                            <Run>нажмите на кнопку с иконкой земли и следуйте инструкции на сайте.</Run>
+                            <LineBreak/>
+                            <Run Foreground="Red" FontWeight="Bold" FontSize="15">UNICOVN GRAPHICS НЕ ОФИЦИАЛЬНОЕ ПРИЛОЖЕНИЕ, А СДЕЛАНО СООБЩЕСТВОМ</Run>
+                        </Paragraph>
+                    </FlowDocument>
+                </RichTextBox>
+            </Grid>
+
+            <!-- Панель 2: Английский -->
+            <Grid x:Name="Panel12" Visibility="Collapsed">
+                <RichTextBox x:Name="TextBox2"
+                             IsReadOnly="True"
+                             VerticalScrollBarVisibility="Visible"
+                             HorizontalScrollBarVisibility="Disabled">
+                    <FlowDocument FontFamily="Segoe UI Variable">
+                        <Paragraph>
+                            <Run FontWeight="Bold" FontSize="20">ᅟᅟㅤㅤСommon problems</Run>
+                            <LineBreak/>
+                            <Run FontWeight="Bold" FontSize="18">Question 1:</Run>
+                            <Run>If everything is correct but the file was not created, is empty, or contains gibberish.</Run>
+                            <LineBreak/>
+                            <Run FontWeight="Bold" FontSize="15">Solution 1:</Run>
+                            <Run>Make sure the file uses UTF-8 or UTF-16LE encoding.</Run>
+                            <LineBreak/>
+                            <Run FontWeight="Bold" FontSize="15">Solution 2:</Run>
+                            <Run>Create a copy of the file and ensure it uses the correct encoding (UTF).</Run>
+                            <LineBreak/>
+                            <Run FontWeight="Bold" FontSize="18">Question 2:</Run>
+                            <Run>If Yudit is not installed and wasn't installed automatically.</Run>
+                            <LineBreak/>
+                            <Run FontWeight="Bold" FontSize="15">Solution:</Run>
+                            <Run>Click the globe icon button and follow the instructions on the website.</Run>
+                            <LineBreak/>
+                            <Run Foreground="Red" FontWeight="Bold" FontSize="15">UNICOVN GRAPHICS IS NOT AN OFFICIAL APPLICATION. IT IS COMMUNITY-MADE.</Run>
+                        </Paragraph>
+                    </FlowDocument>
+                </RichTextBox>
+            </Grid>
+        </Grid>
+
+    </DockPanel>
+
+</Window>

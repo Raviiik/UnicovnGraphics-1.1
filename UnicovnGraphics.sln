@@ -1,0 +1,61 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36202.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnicovnGraphics", "UnicovnGraphics.csproj", "{E6EAD48D-01AA-488A-B832-59BA07D531E5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Элементы решения", "Элементы решения", "{754FC069-D67B-A9D7-50A1-8D1CA196D8F1}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\..\..\locha\Documents\2-Photoroom (1) (1).ico = ..\..\..\..\locha\Documents\2-Photoroom (1) (1).ico
+		ResTempl1.rct = ResTempl1.rct
+		libs\Wpf.Ui.dll = libs\Wpf.Ui.dll
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{36D591C7-65C7-A0D1-1CBC-10CDE441BDC8}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|ARM = Debug|ARM
+		Debug|ARM64 = Debug|ARM64
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|ARM = Release|ARM
+		Release|ARM64 = Release|ARM64
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E6EAD48D-01AA-488A-B832-59BA07D531E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E6EAD48D-01AA-488A-B832-59BA07D531E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E6EAD48D-01AA-488A-B832-59BA07D531E5}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{E6EAD48D-01AA-488A-B832-59BA07D531E5}.Debug|ARM.Build.0 = Debug|Any CPU
+		{E6EAD48D-01AA-488A-B832-59BA07D531E5}.Debug|ARM64.ActiveCfg = Debug|Any CPU
+		{E6EAD48D-01AA-488A-B832-59BA07D531E5}.Debug|ARM64.Build.0 = Debug|Any CPU
+		{E6EAD48D-01AA-488A-B832-59BA07D531E5}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{E6EAD48D-01AA-488A-B832-59BA07D531E5}.Debug|x64.Build.0 = Debug|Any CPU
+		{E6EAD48D-01AA-488A-B832-59BA07D531E5}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{E6EAD48D-01AA-488A-B832-59BA07D531E5}.Debug|x86.Build.0 = Debug|Any CPU
+		{E6EAD48D-01AA-488A-B832-59BA07D531E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E6EAD48D-01AA-488A-B832-59BA07D531E5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E6EAD48D-01AA-488A-B832-59BA07D531E5}.Release|ARM.ActiveCfg = Release|Any CPU
+		{E6EAD48D-01AA-488A-B832-59BA07D531E5}.Release|ARM.Build.0 = Release|Any CPU
+		{E6EAD48D-01AA-488A-B832-59BA07D531E5}.Release|ARM64.ActiveCfg = Release|Any CPU
+		{E6EAD48D-01AA-488A-B832-59BA07D531E5}.Release|ARM64.Build.0 = Release|Any CPU
+		{E6EAD48D-01AA-488A-B832-59BA07D531E5}.Release|x64.ActiveCfg = Release|Any CPU
+		{E6EAD48D-01AA-488A-B832-59BA07D531E5}.Release|x64.Build.0 = Release|Any CPU
+		{E6EAD48D-01AA-488A-B832-59BA07D531E5}.Release|x86.ActiveCfg = Release|Any CPU
+		{E6EAD48D-01AA-488A-B832-59BA07D531E5}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B7DBB9C2-26EB-4087-B47F-8956F9943A40}
+	EndGlobalSection
+EndGlobal
